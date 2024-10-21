@@ -1,9 +1,9 @@
 import React from 'react';
-import Button from './Button.jsx';
-import ProfilePicture from './ProfilePicture.jsx';
+import MyComponent from './MyComponent';
+import Counter from './Counter';
 
 const App = () => {
-  return <ProfilePicture />;
+  return <Counter />;
 };
 
 export default App;
