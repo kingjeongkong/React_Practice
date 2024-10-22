@@ -1,8 +1,8 @@
 import React from 'react';
-import MyComponent from './MyComponent';
+import ToDoList from './ToDoList.jsx';
 
 const App = () => {
-  return <MyComponent />;
+  return <ToDoList />;
 };
 
 export default App;
