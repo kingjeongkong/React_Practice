@@ -1,27 +1,34 @@
 import React, { useState } from 'react';
 
 const MyComponent = () => {
-  const [count, setCount] = useState(0);
+  const [car, setCar] = useState({
+    year: 2024,
+    make: 'Ford',
+    model: 'Mustang',
+  });
 
-  const increment = () => {
-    // 함수형 상태 업데이트
-    // 이전의 상태에 기반에 업데이트를 하고 싶을 시 함수형 상태 업데이트 사용
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-  };
-  const decrement = () => {
-    setCount(count - 1);
-  };
-  const reset = () => {
-    setCount(0);
-  };
+  function handleYearChange(event) {
+    setCar((previousCar) => ({ ...previousCar, year: event.target.value }));
+  }
+  function handleMakeChange(event) {
+    setCar((previousCar) => ({ ...previousCar, make: event.target.value }));
+  }
+  function handleModelChange(event) {
+    setCar((previousCar) => ({ ...previousCar, model: event.target.value }));
+  }
+
   return (
     <div>
-      <p>{count}</p>
-      <button onClick={decrement}>Decrement Button</button>
-      <button onClick={reset}>Reset Button</button>
-      <button onClick={increment}>Increment Button</button>
+      <p>
+        Your favorite car is: {car.year} {car.make} {car.model}
+      </p>
+
+      <input type="number" value={car.year} onChange={handleYearChange} />
+      <br />
+      <input type="text" value={car.make} onChange={handleMakeChange} />
+      <br />
+      <input type="text" value={car.model} onChange={handleModelChange} />
+      <br />
     </div>
   );
 };
