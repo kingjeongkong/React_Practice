@@ -1,8 +1,8 @@
 import React from 'react';
-import DigitalClock from './DigitalClock';
+import ComponentA from './ComponentA';
 
 const App = () => {
-  return <DigitalClock />;
+  return <ComponentA />;
 };
 
 export default App;
