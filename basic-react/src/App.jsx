@@ -1,8 +1,8 @@
 import React from 'react';
-import ToDoList from './ToDoList.jsx';
+import DigitalClock from './DigitalClock';
 
 const App = () => {
-  return <ToDoList />;
+  return <DigitalClock />;
 };
 
 export default App;
