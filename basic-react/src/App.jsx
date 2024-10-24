@@ -1,8 +1,8 @@
 import React from 'react';
-import ComponentA from './ComponentA';
+import Stopwatch from './Stopwatch';
 
 const App = () => {
-  return <ComponentA />;
+  return <Stopwatch />;
 };
 
 export default App;
