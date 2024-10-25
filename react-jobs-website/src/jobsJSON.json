@@ -83,6 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "8d93",
+      "title": "Server",
+      "type": "Full-Time",
+      "location": "Seoul",
+      "description": "Serve",
+      "salary": "Under $50K",
+      "company": {
+        "name": "King",
+        "description": "I'm a King",
+        "contactEmail": "asdf@gmail.com",
+        "contactPhone": "555-5555-5555"
+      }
     }
   ]
 }
